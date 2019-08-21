@@ -10,25 +10,27 @@
 <body>
     <header class="header-blue">
         <div class="container">
-            <div class="row">
+            <div class="row header__container">
                 <div class="col-sm-2">
-                    <div>
-                        <img src="assets/images/chat_icon.svg" alt="chat icon" />
-                        CHAT
+                    <div class="icon__container">
+                        <img class="icon__image" src="assets/images/chat_icon.svg" alt="chat icon" />
+                        <span class="icon__text">CHAT</span>
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div>
-                        <img src="assets/images/inbox_icon.svg" alt="ebox icon" />
-                        EBOX
+                    <div class="icon__container">
+                        <img class="icon__image" src="assets/images/inbox_icon.svg" alt="ebox icon" />
+                        <span class="icon__text">EBOX</span>                        
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <img class="line-left" src="assets/images/logo.svg" alt="logo pensioenfonds" />
+                    <div class="logo__container">
+                      <img class="logo__image line-left" src="assets/images/logo.svg" alt="logo pensioenfonds" />
+                    </div>
                 </div>
                 <div class="col-sm-2">
-                    <div>
-                        <img src="assets/images/log_out_icon.svg" alt="logout icon" />
+                    <div class="icon__container">
+                        <img class="icon__image icon__image--logout" src="assets/images/log_out_icon.svg" alt="logout icon" />
                         <select>
                             <option>NL</option>
                             <option>FR</option>
@@ -41,108 +43,107 @@
         </div>
 
         <div class="header-intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>Intro</p>
             <div class="line-double"></div>
         </div>
         <div class="welcome">
-            <h1 class="welcome-text">Welkom Jos Weyns</h1><i class="arrow-down"></i><a class="link-logout">uitloggen</a>
-            <span class="language">UK</span><span class="language">DE</span><span class="language">FR</span><span
-                class="language language-selected">NL</span>
+            <h1 class="welcome-text">Welkom, Jos Weyns</h1>
         </div>
     </header>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <div class="box-blue text-white">
-                    <div class="title-line-double-parent">
-                        <div class="title-line-double"></div>
-                        <h1 class="title-line-double-text">ACTIES</h1>
-                        <div class="title-line-double"></div>
+        <div class="row main-row">
+            <div class="col-md-4 col-sm-12 main-col">
+                <div class="box box__blue">
+                    <div class="lined-title">
+                        <div class="lined-title__line"></div>
+                        <h1 class="lined-title__text">ACTIES</h1>
+                        <div class="lined-title__line"></div>
                     </div>
-                    <div class="align-center">
-                        Doorloop onderstaande stappen om uw pensioendossier te vervolledigen.
-                    </div>
+                    <p class="align-center">
+                        Doorloop onderstaande stappen om uw <br /> pensioendossier te vervolledigen.
+                    </p>
 
-                    <div class="container">
+                    <div class="button-container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="button-white border-white">
-                                    <div class="text-bold">
-                                        UITBETALING AANVRAGEN
-                                    </div>
-                                    <i class="arrow-right"></i>
+                                <div class="button__main button--white">
+                                    UITBETALING AANVRAGEN
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="button-white border-white">
-                                    <div class="text-bold">
-                                        CONTACTPERSOON TOEVOEGEN
-                                    </div>
-                                    <i class="arrow-right"></i>
+                                <div class="button__main button--white">
+                                    CONTACTPERSOON TOEVOEGEN
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="button-white border-white">
-                                    <div class="text-bold">
-                                        BEGUNSTIGE AANDUIDEN
-                                    </div>
-                                    <i class="arrow-right"></i>
+                                <div class="button__main button--white">
+                                    BEGUNSTIGE AANDUIDEN
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="button-white border-white">
-                                    <div class="text-bold">
-                                        RESERVES OVERDRAGEN
-                                    </div>
-                                    <i class="arrow-right"></i>
+                                <div class="button__main button--white">
+                                    RESERVES OVERDRAGEN
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="box-white">
-                    <div class="title-line-double-parent">
-                        <div class="title-line-double"></div>
-                        <h1 class="title-line-double-text">GEGEVENS</h1>
-                        <div class="title-line-double"></div>
-                    </div>
-                    <i class="align-right">link arrow</i>
-                    <div>
-                        De heer <span class="text-bold">Jos Weyns</span><br>
-                        Geboortedatum: 24/10/1970 <br>
-                        Gehuwd met Charlotte Kiekeboe
-                    </div>
-                    <h2>Laatste Werkgever</h2>
-                    <div>Coco Cola Anderlecht</div>
-                    <h2>Begunstigden Bij Overlijden</h2>
+            <div class="col-md-4 col-sm-12 main-col">
+              <div class="box box__white">
+                <div class="lined-title">
+                    <div class="lined-title__line"></div>
+                    <h1 class="lined-title__text">PERSOONSGEGEVENS</h1>
+                    <div class="lined-title__line"></div>
+                </div>
+                <p class="align-center text-light-blue text-bold">
+                  De heer Jos Weyns
+                </p>
+                <div class="row">
+                  <div class="col-sm-6">Geboortedatum: <br /> 24/10/1970</div>
+                  <div class="col-sm-6">Gehuwd: Charlotte Kiekeboe</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 bottom-text">
+                      <h2>ADRES</h2>
+                  </div>
+                  <div class="col-sm-6">
+                    <h2>BEGUNSTIGDE BIJ OVERLIJDEN</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p>
+                      Happiestraat 334
+                      9890 GAVERE
+                      België
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
                     <ul>
                         <li><a class="link-dark">Charlotte Kiekeboe</a></li>
                         <li><a class="link-dark">Fanny Kiekeboe</a></li>
                         <li><a class="link-dark">Konstantinopel Kiekeboe</a></li>
                     </ul>
-                    <div class="align-right">
-                        <a class="link-dark">MEER ></a>
-                    </div>
+                  </div>
                 </div>
+                <div class="info-button">
+                  <div class="button__main button--blue">
+                      MEER INFO
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="col-md-4 col-sm-12">
-                <div class="box-white">
-                    <div class="title-line-double-parent">
-                        <div class="title-line-double"></div>
-                        <h1 class="title-line-double-text">PENSIOEN</h1>
-                        <div class="title-line-double"></div>
+            <div class="col-md-4 col-sm-12 main-col">
+                <div class="box box__white">
+                    <div class="lined-title">
+                        <div class="lined-title__line"></div>
+                        <h1 class="lined-title__text">PENSIOEN</h1>
+                        <div class="lined-title__line"></div>
                     </div>
                     <i class="align-right">link arrow</i>
                     <div class="align-center text-bigger">
@@ -155,24 +156,23 @@
                         <div>€10.000</div>
                     </div>
 
-                    <div class="align-right">
-                        <a class="link-dark">MEER ></a>
-                    </div>
+                    <div class="info-button">
+                        <div class="button__main button--blue">
+                            MEER INFO
+                        </div>
+                      </div>
                 </div>
             </div>
-
-
         </div>
 
-        <div class="row">
-
-            <div class="col-md-4 col-sm-12">
-                <div class="box-blue text-white">
-                    <h1>VERWACHT PENSIOEN</h1>
-                    <div class="title-line-double-parent">
-                        <div class="title-line-double"></div>
-                        <h1 class="title-line-double-text">OP 67 JAAR</h1>
-                        <div class="title-line-double"></div>
+        <div class="row main-row">
+            <div class="col-md-4 col-sm-12 main-col">
+                <div class="box box__blue">
+                    <h1 class="align-center">VERWACHT PENSIOEN</h1>
+                    <div class="lined-title">
+                        <div class="lined-title__line"></div>
+                        <h1 class="lined-title__text">OP 67 JAAR</h1>
+                        <div class="lined-title__line"></div>
                     </div>
                     <div>
                         <img class="image-height" src="assets/images/nona.jpg" />
@@ -191,13 +191,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="box-blue text-white">
-                    <h1>DIGITALE</h1>
-                    <div class="title-line-double-parent">
-                        <div class="title-line-double"></div>
-                        <h1 class="title-line-double-text">PENSIOENFICHE</h1>
-                        <div class="title-line-double"></div>
+            <div class="col-md-4 col-sm-12 main-col">
+                <div class="box box__blue">
+                    <h1 class="align-center">DIGITALE</h1>
+                    <div class="lined-title">
+                        <div class="lined-title__line"></div>
+                        <h1 class="lined-title__text">PENSIOENFICHE</h1>
+                        <div class="lined-title__line"></div>
                     </div>
                     <div>
                         <img class="image-height" src="assets/images/nona.jpg" />
@@ -219,19 +219,19 @@
             <div class="col-md-4 col-12-sm">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <div class="box-small box-blue text-white">
+                        <div class="box-small box box__blue">
                             <img class="image-small" src="/dist/assets/images/nona.jpg" />
                             <h3>PENSIOEN BEREKENING</h3>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="box-white box-small">
+                        <div class="box box__white box-small">
                             <img class="image-small" src="/dist/assets/images/nona.jpg" />
                             <h3 class="text-blue">INBOX</h3>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="box-green text-white box-small">
+                        <div class="box box__green box-small">
                             <img class="image-small" src="/dist/assets/images/nona.jpg" />
                             <h3>HELPDESK</h3>
                         </div>
