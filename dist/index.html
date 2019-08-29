@@ -42,10 +42,6 @@
             </div>
         </div>
 
-        <div class="header-intro">
-          <p>Intro</p>
-            <div class="line-double"></div>
-        </div>
         <div class="welcome">
             <h1 class="welcome-text">Welkom, Jos Weyns</h1>
         </div>
@@ -53,6 +49,7 @@
 
     <div class="container">
         <div class="row main-row">
+          <!-- Acties Card -->
             <div class="col-md-4 col-sm-12 main-col">
                 <div class="box box__blue">
                     <div class="lined-title">
@@ -64,27 +61,27 @@
                         Doorloop onderstaande stappen om uw <br /> pensioendossier te vervolledigen.
                     </p>
 
-                    <div class="button-container">
+                    <div class="box__content button-container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="button__main button--white">
+                                <div class="button button--white">
                                     UITBETALING AANVRAGEN
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="button__main button--white">
+                                <div class="button button--white">
                                     CONTACTPERSOON TOEVOEGEN
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="button__main button--white">
+                                <div class="button button--white">
                                     BEGUNSTIGE AANDUIDEN
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="button__main button--white">
+                                <div class="button button--white">
                                     RESERVES OVERDRAGEN
                                 </div>
                             </div>
@@ -92,6 +89,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Persoonsgegevens Card -->
             <div class="col-md-4 col-sm-12 main-col">
               <div class="box box__white">
                 <div class="lined-title">
@@ -130,14 +128,16 @@
                     </ul>
                   </div>
                 </div>
-                <div class="info-button">
-                  <div class="button__main button--blue">
-                      MEER INFO
-                  </div>
+                <div class="box__button">
+                  <a href="./persoon.html">
+                    <div class="button button--blue">
+                        MEER INFO
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
-
+            <!-- Pensioen Card -->
             <div class="col-md-4 col-sm-12 main-col">
                 <div class="box box__white">
                     <div class="lined-title">
@@ -145,94 +145,86 @@
                         <h1 class="lined-title__text">PENSIOEN</h1>
                         <div class="lined-title__line"></div>
                     </div>
-                    <i class="align-right">link arrow</i>
-                    <div class="align-center text-bigger">
-                        <div class="text-blue">Pensioenreserves opgebouwd op 01/01/2014</div>
-                        <div>€10.000</div>
+                    <div class="align-center">
+                        <p class="text-blue text-bold">PENSIOENRESERVES OPGEBOUWD OP 01/01/2014</p>
+                        <div class="text-bold">€122.48</div>                        
                     </div>
-                    <div class="align-center text-bigger">
-                        <div class="text-blue">Als u vandaag overlijdt, hebben uw begunstigden recht op
-                        </div>
-                        <div>€10.000</div>
+                    <hr>
+                    <div class="align-center">
+                        <p class="text-blue text-bold">ALS JE VANDAAG OVERLIJDT, HEBBEN JE BEGUNSTIGDEN RECHT OP
+                        </p>
+                        <div class="text-bold">€122.48</div>
                     </div>
 
-                    <div class="info-button">
-                        <div class="button__main button--blue">
-                            MEER INFO
-                        </div>
+                    <div class="box__button">
+                      <div class="button button--blue">
+                          MEER INFO
                       </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row main-row">
+            <!-- Digitale Fiche Card -->
+            <div class="col-md-4 col-sm-12 main-col">
+              <div class="box box__blue">
+                  <div class="lined-title">
+                      <div class="lined-title__line"></div>
+                      <h1 class="lined-title__text">DIGITALE PENSIOENFICHE</h1>
+                      <div class="lined-title__line"></div>
+                  </div>
+                  <div>
+                      <img class="image-height" src="assets/images/nona.jpg" />
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                          ut labore et dolore magna
+                          aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. Tellus cras adipiscing enim
+                          eu turpis. Rhoncus aenean
+                          vel elit scelerisque mauris</p>
+                  </div>
+                  <div class="box__button">                    
+                      <div class="button button--white">
+                          UW PENSIOENFICHE DIGITAAL ONTVANGEN
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- Verwacht Pensioen Card -->
             <div class="col-md-4 col-sm-12 main-col">
                 <div class="box box__blue">
-                    <h1 class="align-center">VERWACHT PENSIOEN</h1>
                     <div class="lined-title">
                         <div class="lined-title__line"></div>
-                        <h1 class="lined-title__text">OP 67 JAAR</h1>
+                        <h1 class="lined-title__text">PENSIOENSIMULATIE</h1>
                         <div class="lined-title__line"></div>
                     </div>
                     <div>
                         <img class="image-height" src="assets/images/nona.jpg" />
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna
                             aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. Tellus cras adipiscing enim
                             eu turpis. Rhoncus aenean
-                            vel elit scelerisque mauris</div>
+                            vel elit scelerisque mauris</p>
                     </div>
-                    <hr>
-                    <div>
-                        <div class="text-big align-center">
-                            SIMULATIE VAN UW PENSIOEN OP 65 JAAR
-                        </div>
-                        <i class="arrow-right"></i>
+                    <div class="box__button">                    
+                      <div class="button button--white">
+                          SIMULATIE VAN UW PENSIOEN OP 65 JAAR
+                      </div>
                     </div>
                 </div>
             </div>
+            <!-- Buttons Row -->
             <div class="col-md-4 col-sm-12 main-col">
-                <div class="box box__blue">
-                    <h1 class="align-center">DIGITALE</h1>
-                    <div class="lined-title">
-                        <div class="lined-title__line"></div>
-                        <h1 class="lined-title__text">PENSIOENFICHE</h1>
-                        <div class="lined-title__line"></div>
-                    </div>
-                    <div>
-                        <img class="image-height" src="assets/images/nona.jpg" />
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna
-                            aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. Tellus cras adipiscing enim
-                            eu turpis. Rhoncus aenean
-                            vel elit scelerisque mauris</div>
-                    </div>
-                    <hr>
-                    <div>
-                        <div class="text-big align-center">
-                            UW PENSIOENFICHE DIGITAAL ONTVANGEN
-                        </div>
-                        <i class="arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12-sm">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="box-small box box__blue">
-                            <img class="image-small" src="/dist/assets/images/nona.jpg" />
                             <h3>PENSIOEN BEREKENING</h3>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="box box__white box-small">
-                            <img class="image-small" src="/dist/assets/images/nona.jpg" />
                             <h3 class="text-blue">INBOX</h3>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="box box__green box-small">
-                            <img class="image-small" src="/dist/assets/images/nona.jpg" />
                             <h3>HELPDESK</h3>
                         </div>
                     </div>
@@ -241,8 +233,37 @@
         </div>
     </div>
     <footer>
-        footer
+      <div class="footer-section col-md-3 col-sm-12">
+        <div class="button button--green">
+            087/15 87 95
+        </div>
+        <div class="button button--green">
+            info@pensionfundsnonprofit.org
+        </div>
+        <p><a href="#">meer info</a></p>
+      </div>
+
+      <div class="footer-section col-md-3 col-sm-12">
+        <h1>Pensioensinstelling</h1>
+        <p>Pensioenfonds van de federale Non-Profit/Social-Profit</p>
+        <p>Sainctelettesquare 13-15, 1000 Brussel</p>
+        <br />
+        <div class="text-gray">
+          <p>Organisme voor de financiering van pensioenen</p>
+          <p>Instelling voor bedrijfspensioenvoorziening</p>
+          <p>toegelaten op 15-05-2012 onder het nummer 50.604</p>
+        </div>
+      </div>
+
+      <div class="footer-section col-md-3 col-sm-12">
+        <h1>Inrichter</h1>
+        <p>Federale sociale sector (organisaties ressorterend onder het paritair comite voor de gezondheidsinrichtingen- en diensten (PC 330) waarop de CAO van de 13 decembebr 2010 tot invoering van een sectoraal aanvullend pesioenstelsel van toepassing is)</p>
+      </div>
+
+      <div class="footer-section col-md-3 col-sm-12">
+        <h1>Wettelijke vermeldingen</h1>
+        <a href='#'>Responsible Disclosure</a>
+      </div>
     </footer>
 </body>
-
 </html>
