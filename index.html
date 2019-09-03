@@ -42,18 +42,17 @@
   #resp-container {
       display: none;
       position: relative;
-      overflow: hidden;
       width: 100vw;
-      height: 100vh;
+      min-height: 100vh;
   }
 
   #resp-iframe {
-      position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      min-height: 100vh;
       border: 0;
+      overflow: scroll;
   }
 </style>
 
@@ -81,6 +80,7 @@
 
       if (hash === "024500726b0338bc6cd058d72a8ba911f248bd1f") {
         $("#resp-container").css('display', 'block');
+        $("#loginbox").css('display', 'none');
         $("#resp-iframe").prop('src', location.href + pwd + '/index.html?bust');
       } else {
         $("#password").attr("placeholder","wrong password");
