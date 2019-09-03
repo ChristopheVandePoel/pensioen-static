@@ -80,7 +80,7 @@
 
       if (hash === "024500726b0338bc6cd058d72a8ba911f248bd1f") {
         $("#resp-container").css('display', 'block');
-        $("#resp-iframe").prop('src', location.href + pwd);
+        $("#resp-iframe").prop('src', location.href + pwd + '/index.html?bust');
       } else {
         $("#password").attr("placeholder","wrong password");
         $("#password").val("");
