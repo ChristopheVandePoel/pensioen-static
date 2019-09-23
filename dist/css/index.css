@@ -425,6 +425,10 @@ h2 {
   justify-content: flex-end;
 }
 
+.title--row {
+  margin-top: 16px;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
