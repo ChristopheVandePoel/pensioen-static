@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 88" width="106" height="88">
+<svg fill="#666666" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="24" height="21">
 	<defs>
-		<image width="24" height="20" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjIxIj4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIC0yTDI0IC0yTDI0IDIyTDAgMjJaIiAvPgoJCTwvY2xpcFBhdGg+Cgk8L2RlZnM+Cgk8c3R5bGU+CgkJdHNwYW4geyB3aGl0ZS1zcGFjZTpwcmUgfQoJCS5zaHAwIHsgZmlsbDogIzAwMDAwMCB9IAoJPC9zdHlsZT4KCTxnIGlkPSJQYWdlIDEiIGNsaXAtcGF0aD0idXJsKCNjcDEpIj4KCQk8cGF0aCBpZD0iUGF0aCAxIiBjbGFzcz0ic2hwMCIgZD0iTTAgMEwwIDIwTDE0IDIwTDE0IDE4TDIgMThMMiAyTDE0IDJMMTQgMEwwIDBaTTE2IDdMOCA3TDggMTNMMTYgMTNMMTYgMTdMMjQgMTBMMTYgM0wxNiA3WiIgLz4KCTwvZz4KPC9zdmc+"/>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M0 -2L24 -2L24 22L0 22Z" />
+		</clipPath>
 	</defs>
 	<style>
 		tspan { white-space:pre }
 	</style>
-	<use id="log_out_icon" href="#img1" transform="matrix(4.417,0,0,4.4,0,0)"/>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<path id="Path 1" class="shp0" d="M0 0L0 20L14 20L14 18L2 18L2 2L14 2L14 0L0 0ZM16 7L8 7L8 13L16 13L16 17L24 10L16 3L16 7Z" />
+	</g>
 </svg>

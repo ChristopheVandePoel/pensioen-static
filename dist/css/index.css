@@ -12,7 +12,7 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
-html,body,body div,span,h1,h2,h3,h4,h5,h6,p,img,small,ul,li,footer,header,section {
+html,body,body div,span,h1,h2,h3,h4,h5,h6,p,img,small,sub,ul,li,footer,header,section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -101,6 +101,16 @@ small {
 }
 
 /* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -0.25em;
+}
 
 /* standardize any monospaced elements */
 
@@ -392,8 +402,8 @@ body {
 }
 
 h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 900;
 }
 
 h2 {
@@ -422,6 +432,7 @@ a {
 
 header {
   background-color: #ffffff;
+  z-index: 9;
 }
 
 header .line-left {
@@ -430,8 +441,8 @@ header .line-left {
 
 header select {
   border-radius: 0;
-  color: #777777;
-  border-color: #777777;
+  color: #666666;
+  border-color: #666666;
   border-width: 3px;
   font-family: "Josefin_Sans", Helvetica, sans-serif;
   font-weight: 700;
@@ -449,8 +460,17 @@ header select {
   height: 100%;
 }
 
+.icon__container--logout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-right: 8px;
+  height: 100%;
+}
+
 .icon__image {
-  height: 30px;
+  height: 45px;
 }
 
 .icon__image--logout {
@@ -458,9 +478,11 @@ header select {
 }
 
 .icon__text {
+  color: #003366;
   flex: 0.5;
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
+  font-weight: 700;
 }
 
 .logo__container {
@@ -479,6 +501,7 @@ header select {
   text-align: center;
   color: #ffffff;
   background-color: #003372;
+  box-shadow: 0px 2px 7px -4px black;
 }
 
 .welcome {
@@ -494,7 +517,7 @@ header select {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .lined-title__line {
@@ -521,10 +544,19 @@ header select {
 
 .box {
   padding: 15px;
-  font-size: 14px;
-  border-bottom: 3px solid #1a6cb3;
+  font-size: 16px;
+  border-bottom: 3px solid #003372;
   display: flex;
   flex-direction: column;
+}
+
+.box > p {
+  line-height: 1.5;
+}
+
+.box .sub-title {
+  font-style: italic;
+  margin-bottom: 4px;
 }
 
 .box__white {
@@ -544,12 +576,8 @@ header select {
   color: #003366;
 }
 
-.box__white .text-blue {
-  color: #03a7e8;
-}
-
 .box__blue {
-  background: #03a7e8;
+  background: #00adef;
   color: #ffffff;
 }
 
@@ -584,18 +612,19 @@ header select {
   background-color: #ffffff;
   border: 4px solid;
   border-radius: 2px;
-  font-weight: bold;
-  line-height: 14px;
+  font-weight: 900;
+  line-height: 16px;
   padding: 5px 0;
   text-align: center;
+  box-shadow: 0px 2px 7px -4px black;
 }
 
 .button > span {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .button-container {
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .button-container .button {
@@ -609,8 +638,8 @@ header select {
 }
 
 .button--blue {
-  background-color: #03a7e8;
-  border-color: #6dd6ff #6dd6ff #1a6cb3 #1a6cb3;
+  background-color: #00adef;
+  border-color: #6dd6ff #6dd6ff #0090C5 #0090C5;
   color: #ffffff;
 }
 
@@ -618,6 +647,17 @@ header select {
   background-color: #02945e;
   border-color: #00b371 #00b371 #00794c #00794c;
   color: #ffffff;
+}
+
+.button--empty {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #ffffff;
+  padding: 8px;
+  height: calc(100% - 16px);
 }
 
 .main-col {

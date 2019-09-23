@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 128" width="168" height="128">
-	<defs>
-		<image width="24" height="18" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImluYm94X3g1Rl9pY29uIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiCgkgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGlkPSJpbmJveCIgZD0iTTAsM3YxOGgyNFYzSDB6IE02LjYyMywxMC45MjlMMiwxNi42NDFWNy4xODNDMiw3LjE4Myw2LjYyMywxMC45MjksNi42MjMsMTAuOTI5eiBNMi40ODIsNWgxOS4wMzVMMTIsMTIuNzEzCglDMTIsMTIuNzEzLDIuNDgyLDUsMi40ODIsNXogTTguMTc2LDEyLjE4OEwxMiwxNS4yODdsMy44My0zLjEwNEwyMS40NDIsMTlIMi42NjNMOC4xNzYsMTIuMTg4eiBNMTcuMzg0LDEwLjkyNEwyMiw3LjE4M3Y5LjM0OAoJQzIyLDE2LjUzMSwxNy4zODQsMTAuOTI0LDE3LjM4NCwxMC45MjR6Ii8+Cjwvc3ZnPgo="/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="inbox_icon" href="#img1" transform="matrix(6.96,0,0,7.053,-3,-3)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg fill="#003366" version="1.1" id="inbox_x5F_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<path id="inbox" d="M0,3v18h24V3H0z M6.623,10.929L2,16.641V7.183C2,7.183,6.623,10.929,6.623,10.929z M2.482,5h19.035L12,12.713
+	C12,12.713,2.482,5,2.482,5z M8.176,12.188L12,15.287l3.83-3.104L21.442,19H2.663L8.176,12.188z M17.384,10.924L22,7.183v9.348
+	C22,16.531,17.384,10.924,17.384,10.924z"/>
 </svg>
