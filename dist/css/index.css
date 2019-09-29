@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
@@ -12,7 +14,7 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
-html,body,body div,span,h1,h2,h3,h4,h5,h6,p,img,small,sub,ul,li,footer,header,section {
+html,body,body div,span,h1,h2,h3,h4,h5,h6,p,img,small,sub,i,ul,li,footer,header,section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -262,6 +264,10 @@ button {
     justify-content: center;
   }
 
+  .row.top-sm {
+    align-items: flex-start;
+  }
+
   .row.bottom-sm {
     align-items: flex-end;
   }
@@ -364,6 +370,10 @@ button {
     justify-content: center;
   }
 
+  .row.top-md {
+    align-items: flex-start;
+  }
+
   .row.bottom-md {
     align-items: flex-end;
   }
@@ -374,12 +384,74 @@ button {
 }
 
 @font-face {
-  font-family: "Josefin_Sans";
-  src: url("../assets/fonts/Josefin_Sans/Josefin Sans regular.ttf") format("truetype");
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_100italic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_100.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_300italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_600italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../assets/fonts/Josefin_Sans/Josefin_Sans_700italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+p {
+  font-weight: 300;
 }
 
 * {
-  font-family: "Josefin_Sans", Helvetica, sans-serif;
+  font-family: "JosefinSans", Helvetica, sans-serif;
 }
 
 body {
@@ -389,21 +461,82 @@ body {
   min-height: 100vh;
 }
 
+hr.half-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.sm-flex-order-1 {
+  order: 1;
+}
+
+.sm-flex-order-2 {
+  order: 2;
+}
+
+.sm-flex-order-3 {
+  order: 3;
+}
+
+.sm-flex-order-4 {
+  order: 4;
+}
+
+.sm-flex-order-5 {
+  order: 5;
+}
+
+.sm-flex-order-6 {
+  order: 6;
+}
+
+.sm-flex-order-7 {
+  order: 7;
+}
+
+.sm-flex-order-8 {
+  order: 7;
+}
+
+.flex-space {
+  height: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
 .text-white {
   color: #ffffff;
 }
 
 .text-light-blue {
-  color: #03a7e8;
+  color: #00adef;
 }
 
 .text-dark-blue {
   color: #003366;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-large {
+  font-size: 22px;
+}
+
 h1 {
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h2 {
@@ -411,12 +544,16 @@ h2 {
   font-weight: 700;
 }
 
-.align-center {
-  text-align: center;
+.align-left {
+  text-align: left;
 }
 
-.text-bold {
-  font-weight: bold;
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
 }
 
 .bottom-text {
@@ -434,35 +571,61 @@ a {
   text-decoration: none;
 }
 
+.info-icon {
+  font-size: 30px;
+  align-content: center;
+  align-items: center;
+  font-style: normal;
+  color: #999999;
+}
+
+.info-icon:after {
+  content: "🛈";
+}
+
 header {
   background-color: #ffffff;
   z-index: 9;
 }
 
-header .line-left {
-  border-left: 1px solid #cccccc;
+@media screen and (max-width: 700px) {
+  header .line-left {
+    border-left: 1px solid #cccccc;
+  }
 }
 
-header select {
+select {
   border-radius: 0;
   color: #666666;
   border-color: #666666;
   border-width: 3px;
-  font-family: "Josefin_Sans", Helvetica, sans-serif;
+  font-family: "JosefinSans", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 14px;
-  padding-top: 2px;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 700px) {
+  select {
+    padding-top: 4px;
+  }
+}
+
+select.select--white {
+  background: white;
 }
 
 .header__container {
   height: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .icon__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   height: 100%;
 }
 
@@ -471,7 +634,7 @@ header select {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
-  padding-right: 8px;
+  padding-right: 10px;
   height: 100%;
 }
 
@@ -504,18 +667,45 @@ header select {
 }
 
 .welcome {
+  padding: 8px;
   text-align: center;
   color: #ffffff;
   background-color: #003372;
   box-shadow: 0px 2px 7px -4px black;
 }
 
-.welcome {
-  padding: 10px;
+.welcome-desktop {
+  position: relative;
+  background: #1A6EB7;
+  color: white;
+  padding: 8px;
+  margin: 0 8px;
+  width: 100%;
 }
 
-.welcome .welcome-text {
+.welcome-desktop .welcome-text {
+  margin-left: 16px;
+}
+
+.welcome-desktop .language-container {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+
+.welcome-desktop .language {
+  text-align: center;
+  width: 30px;
   display: inline-block;
+  padding: 2px;
+  border: 2px solid #00adef;
+  color: #00adef;
+  font-size: 16px;
+}
+
+.welcome-desktop .language.selected {
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .lined-title {
@@ -524,6 +714,23 @@ header select {
   flex-direction: row;
   align-items: center;
   margin-bottom: 4px;
+}
+
+.lined-title--light {
+  width: 90%;
+  align-self: center;
+}
+
+.lined-title--light > .lined-title__line {
+  color: #00adef;
+  border-top: 1px solid #00adef;
+}
+
+@media all and (min-width: 1000px) {
+  .lined-title--light > .lined-title__line {
+    height: 3px;
+    border-bottom: 1px solid #00adef;
+  }
 }
 
 .lined-title__line {
@@ -561,7 +768,6 @@ header select {
 }
 
 .box .sub-title {
-  font-style: italic;
   margin-bottom: 4px;
 }
 
@@ -574,7 +780,18 @@ header select {
 }
 
 .box__white h2 {
-  color: #03a7e8;
+  color: #00adef;
+}
+
+.box__white h3 {
+  color: #00adef;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.box__white p a {
+  color: #003366;
+  text-decoration: underline;
 }
 
 .box__white .link-dark {
@@ -589,12 +806,6 @@ header select {
 
 .box__blue .lined-title__line {
   border-color: #ffffff;
-}
-
-.box__blue .image-height {
-  max-height: 100px;
-  float: left;
-  padding-right: 15px;
 }
 
 .box__green {
@@ -614,28 +825,83 @@ header select {
   text-align: center;
 }
 
+.doc-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.doc-container > .col {
+  width: 50%;
+  align-self: flex-start;
+  flex: 1;
+}
+
+.doc-container .doc-image {
+  border: 2px solid #003366;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+span.placeholder-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+}
+
+.image-text__container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  align-items: center;
+}
+
+.image-text__container > span {
+  flex: 1;
+  height: auto;
+}
+
+.image-text__container > p {
+  flex: 2.5;
+  padding: 0 16px;
+}
+
 .button {
   background-color: #ffffff;
   border: 4px solid;
   border-radius: 2px;
   min-height: 16px;
+  line-height: 16px;
   padding: 4px;
   text-align: center;
   box-shadow: 0px 2px 7px -4px black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 700px) {
   .button {
-    padding-top: 8px;
     justify-content: flex-end;
     line-height: 16px;
     font-size: 16px;
-    margin-top: 0;
+    padding-top: 6px;
+    padding-bottom: 2px;
   }
+}
+
+.button.icon--left {
+  flex-direction: row;
+}
+
+.button.icon--left > span {
+  flex: 5;
+}
+
+.button.icon--left > span.button__icon {
+  flex: 1;
 }
 
 .button-container {
@@ -648,7 +914,7 @@ header select {
 
 .button--white {
   background-color: #ffffff;
-  border-color: #ffffff #ffffff #cfcfcf #cfcfcf;
+  border-color: #ffffff #ffffff #999999 #999999;
   color: #003366;
 }
 
@@ -661,6 +927,12 @@ header select {
 .button--green {
   background-color: #02945e;
   border-color: #00b371 #00b371 #00794c #00794c;
+  color: #ffffff;
+}
+
+.button--gray {
+  background-color: #999999;
+  border-color: #b3b3b3 #b3b3b3 #7e7e7e #7e7e7e;
   color: #ffffff;
 }
 
@@ -697,7 +969,7 @@ footer {
 
 footer .footer-section {
   padding: 16px;
-  border-top: 1px solid #cfcfcf;
+  border-top: 1px solid #999999;
 }
 
 footer .footer-section .button {
@@ -709,7 +981,53 @@ footer a {
   text-decoration: underline;
 }
 
+@media all and (max-width: 1000px) {
+  .hidden-on-small {
+    display: none;
+  }
+
+  .mobile-upper {
+    text-transform: uppercase;
+  }
+}
+
 @media all and (min-width: 1000px) {
+  .flex-order-1 {
+    order: 1;
+  }
+
+  .flex-order-2 {
+    order: 2;
+  }
+
+  .flex-order-3 {
+    order: 3;
+  }
+
+  .flex-order-4 {
+    order: 4;
+  }
+
+  .flex-order-5 {
+    order: 5;
+  }
+
+  .flex-order-6 {
+    order: 6;
+  }
+
+  .flex-order-7 {
+    order: 7;
+  }
+
+  .flex-order-8 {
+    order: 8;
+  }
+
+  .hidden-on-large {
+    display: none;
+  }
+
   .main-row .main-col {
     padding: 8px;
   }
@@ -723,7 +1041,20 @@ footer a {
     text-align: left;
   }
 
+  footer .footer {
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    justify-content: space-between;
+  }
+
   footer .footer-section {
     border: none;
+    flex: 1;
   }
 }

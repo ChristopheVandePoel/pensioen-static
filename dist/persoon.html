@@ -11,13 +11,13 @@
 <header class="header-blue">
     <div class="container">
         <div class="row header__container">
-            <div class="col-sm-2">
+            <div class="col-sm-2 hidden-on-large">
                 <div class="icon__container">
                     <img class="icon__image" src="assets/images/chat_icon.svg" alt="chat icon" />
                     <span class="icon__text">CHAT</span>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 hidden-on-large">
                 <div class="icon__container">
                     <img class="icon__image" src="assets/images/inbox_icon.svg" alt="ebox icon" />
                     <span class="icon__text">EBOX</span>
@@ -28,10 +28,11 @@
                     <img class="logo__image line-left" src="assets/images/logo.svg" alt="logo pensioenfonds" />
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 hidden-on-large">
                 <div class="icon__container">
                     <div class="icon__container--logout">
-                        <img class="icon__image icon__image--logout" src="assets/images/log_out_icon.svg" alt="logout icon" />
+                        <img class="icon__image icon__image--logout" src="assets/images/log_out_icon.svg"
+                             alt="logout icon" />
                         <select>
                             <option>NL</option>
                             <option>FR</option>
@@ -43,110 +44,234 @@
             </div>
         </div>
     </div>
-
-    <div class="welcome">
-        <h2 class="welcome-text">Welkom, Jos Weyns</h1>
-    </div>
 </header>
 
 <div class="container">
     <div class="row main-row">
+        <div class="col-md-4 col-sm-12 hidden-on-large">
+            <div class="col-sm-12 box">
+                <div class="box__button box__button--tight">
+                    <div class="button button--blue">
+                        <a href="./">TERUG NAAR STARTPAGINA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Persoonsgegevens Card -->
-        <div class="col-md-4 col-sm-12 main-col">
+        <div class="col-md-4 col-sm-12 main-col sm-flex-order-1 flex-order-1">
             <div class="col-sm-12 box box__white">
                 <div class="lined-title">
                     <div class="lined-title__line"></div>
                     <h1 class="lined-title__text">PERSOONSGEGEVENS</h1>
                     <div class="lined-title__line"></div>
                 </div>
-                <div class="hide-when-small">
-                    <p class="align-center text-light-blue text-bold">
-                        De heer Jos Weyns
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-6">Geboortedatum: <br /> 24/10/1970</div>
-                        <div class="col-sm-6">Gehuwd: Charlotte Kiekeboe</div>
-                    </div>
-                    <div class="row title--row">
-                        <div class="col-sm-6 bottom-text">
-                            <p class="text-light-blue text-bold">ADRES</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="text-light-blue text-bold">BEGUNSTIGDE BIJ OVERLIJDEN</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>
-                                Happiestraat 334
-                                9890 GAVERE
-                                België
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul>
-                                <li><a class="link-dark">Charlotte Kiekeboe</a></li>
-                                <li><a class="link-dark">Fanny Kiekeboe</a></li>
-                                <li><a class="link-dark">Konstantinopel Kiekeboe</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="lined-title lined-title--light">
+                    <div class="lined-title__line"></div>
+                    <h2 class="lined-title__text">RIJKSREGISTER</h2>
+                    <div class="lined-title__line"></div>
                 </div>
-                <div class="box__button">
+                <p class="align-center">
+                    <i class="info-icon"></i>
+                </p>
+                <p class="align-center text-italic">
+                    De onderstaande gegevens worden opgehaald via het rijksregister en kunnen niet gewijzigd worden. <br>
+                    Als deze gegevens toch niet correct zijn, kan je ons steeds <a href="#">contacteren</a>.
+                </p>
+                <div class="box__list">
+                    <ul>
+                        <li>mevrouw Anna-Marietta Van Heuckelom</li>
+                        <li>geboren op: 24 oktober 1970</li>
+                        <li>gehuwd met: Charlotte Kiekeboe</li>
+                        <li>rijksregisternummer: 791924.000.00</li>
+                        <li>ingengsdatum wettelijk pensioen: 1 november 2019</li>
+                    </ul>
+                </div>
+                <div class="box__button box__button--tight hidden-on-small">
                     <div class="button button--blue">
-                        <a href="./">TERUG</a>
+                        <a href="./">TERUG NAAR STARTPAGINA</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 box box__blue">
-                <div class="lined-title">
-                    <div class="lined-title__line"></div>
-                    <h1 class="lined-title__text">DIGITALE PENSIOENFICHE</h1>
-                    <div class="lined-title__line"></div>
-                </div>
-                <div class="hide-when-small">
-                    <img class="image-height" src="assets/images/nona.jpg" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna
-                        aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. Tellus cras adipiscing enim
-                        eu turpis. Rhoncus aenean
-                        vel elit scelerisque mauris</p>
-                </div>
-                <div class="box__button">
-                    <div class="button button--white">
-                        UW PENSIOENFICHE DIGITAAL ONTVANGEN
+
+            <!-- ADRES Card -->
+            <div class="sm-flex-order-2 flex-order-3">
+                <div class="box box__white">
+                    <div class="lined-title lined-title--light">
+                        <div class="lined-title__line"></div>
+                        <h2 class="lined-title__text">ADRES</h2>
+                        <div class="lined-title__line"></div>
                     </div>
+                    <p class="sub-title align-center text-dark-blue text-bold">
+                        Happiestraat 335 <br />
+                        9890 GAVARE <br />
+                        Belgie<br />
+                    </p>
+                    <div class="box__content button-container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="button button--gray button--more-text">
+                                    ADRES IS NIET CORRECT, ADRES AANPASSEN
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="button button--gray button--more-text">
+                                    IK BEN VERHUISD, NIEUW ADRES INGEVEN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LOOPBAAN Card -->
+        <div class="col-md-8 col-sm-12 main-col sm-flex-order-3 flex-order-5">
+            <div class="col-sm-12 box box__white">
+                <div class="lined-title lined-title--light">
+                    <div class="lined-title__line"></div>
+                    <h2 class="lined-title__text">LOOPBAAN</h2>
+                    <div class="lined-title__line"></div>
+                </div>
+                <p class="align-center">
+                    <i class="info-icon"></i>
+                </p>
+                <p class="align-center text-italic">
+                    Bij de vaststelling van je aanvullend pensioen hebben we rekening gehouden met de volgende loopbaangegevens. Deze loopbaangegevens worden ons meegedeeld door de RSZ op basis van informatie van de werkgever.
+                </p>
+                <div class="box__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Trimester</th>
+                                <th>Werkgever</th>
+                                <th>Bedrag</th>
+                                <th>Tewerkst. (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-center">20121</td>
+                                <td class="table-left">Coca</td>
+                                <td>1.085,69</td>
+                                <td>50,00</td>
+                            </tr>
+                            <tr>
+                                <td class="table-center">20121</td>
+                                <td class="table-left">Coca Cola Anderlecht</td>
+                                <td>1.085,69</td>
+                                <td>50,00</td>
+                            </tr>
+                            <tr>
+                                <td class="table-center">20121</td>
+                                <td class="table-left">Coca Cola Anderlecht</td>
+                                <td>1.085,69</td>
+                                <td>50,00</td>
+                            </tr>
+                            <tr>
+                                <td class="table-center">20121</td>
+                                <td class="table-left">Coca Cola Anderlecht</td>
+                                <td>1.085,69</td>
+                                <td>50,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <!-- Pensioen Card -->
-        <div class="col-md-8 col-sm-12 main-col">
+        <!-- OVERLIJDENN Card -->
+        <div class="col-md-8 col-sm-12 main-col sm-flex-order-4 flex-order-2">
             <div class="box box__white">
-                <div class="lined-title">
+                <div class="lined-title lined-title--light">
                     <div class="lined-title__line"></div>
-                    <h1 class="lined-title__text">GEGEVENS</h1>
+                    <h2 class="lined-title__text">OVERLIJDEN</h2>
                     <div class="lined-title__line"></div>
+                </div>
+                <p class="align-center text-bold text-dark-blue">1. BENGUNSTIGDEN BIJ OVERLIJDEN</p>
+                <p class="align-center">
+                    <i class="info-icon"></i>
+                </p>
+                <p class="align-center text-italic">
+                    Als je komt te overlijden, wordt je overlijdenskapitaal uitbetaald aan de volgende personen:
+                </p>
+                <div class="box__list-ol">
+                    <ol>
+                        <li>aan de echtgenoot van de aangeslotene voor zover niet gerechtelijk ban tabel en bed of feitelijk gescheiden</li>
+                        <li>als die er niet is, aan de wettelijk samenwonende</li>
+                        <li>als die er niet is, aan de kinderen</li>
+                        <li>aan de door de aangeslotene bij het pensioenfonds aangeduide personen (zoals onderaan vermeld)</li>
+                        <li>als die er niet zijn, aan de ouders</li>
+                        <li>als die er niet zijn, aan het Pensioenfonds</li>
+                    </ol>
+                </div>
+                <div class="box__list box__list--begunstigden">
+                    <h3 class="align-center">AANGEDUIDE BEGUNSTIGDEN</h3>
+                    <ul>
+                        <li><a href="#">Marcel Kiekeboe</a></li>
+                        <li><a href="#">Fanny Kiekeboe</a></li>
+                        <li><a href="#">Konstantinopel Kiekeboe</a></li>
+                    </ul>
+                </div>
+                <div class="button button--gray button--more-text">
+                    WIJZIG AANGEDUIDE BEGUNSTIGDEN
+                </div>
+                <br>
+                <p class="align-center text-bold text-dark-blue">2. CONTACTPERSONEN BIJ OVERLIJDEN</p>
+                <p class="align-center">
+                    <i class="info-icon"></i>
+                </p>
+                <p class="align-center text-italic">
+                    Als je komt te overlijden, sturen we alle briefwisseling naar een contactpersoon. De contactpersoon is je vertrouwenspersoon en weet ook waar je partner, kinder of begunstigden wonen. Door een contactpersoon aan te duiden, heeft deze persoon geen recht op het overlijdenskapitaal.
+                    <br>
+                    <br>
+                    Hieronder zie je de huidig aangeduide contactpersonen, welke je kan wijzigen indien nodig.
+                </p>
+                <div class="box__list box__list--begunstigden">
+                    <h3 class="align-center">AANGEDUIDE CONTACTPERSONEN</h3>
+                    <ul>
+                        <li><a href="#">Marcel Kiekeboe</a></li>
+                        <li><a href="#">Fanny Kiekeboe</a></li>
+                        <li><a href="#">Konstantinopel Kiekeboe</a></li>
+                    </ul>
+                </div>
+                <div class="button button--gray button--more-text">
+                    WIJZIG AANGEDUIDE CONTACTPERSONEN
                 </div>
             </div>
         </div>
+        <!-- INSTELLINGEN Card -->
+        <div class="col-md-4 col-sm-12 main-col sm-flex-order-5 flex-order-4">
+            <div class="box box__white">
+                <div class="lined-title lined-title--light">
+                    <div class="lined-title__line"></div>
+                    <h2 class="lined-title__text">INSTELLINGEN</h2>
+                    <div class="lined-title__line"></div>
+                </div>
+                <p class="sub-title align-center text-dark-blue text-bold">
+                    Wat is je voorkeurstaal?
+                </p>
+                <select class="select--white select-half-size align-center">
+                    <option>Nederlands</option>
+                    <option>Frans</option>
+                    <option>Engels</option>
+                </select>
+                <br>
+                <p class="align-center">
+                    <i class="info-icon"></i>
+                </p>
+                <p class="sub-title align-center text-dark-blue">
+                    De briefwisseling voor dit pensioenplan wordt enkel in volgende talen verstuurd: Nederlands, Frans, Duits
+                </p>
+            </div>
+        </div>
 
-        <!-- Buttons Row -->
-        <div class="col-md-4 col-sm-12 main-col">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="box-small box box__blue">
-                        <h3>PENSIOEN BEREKENING</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="box box__white box-small">
-                        <h3 class="text-light-blue">INBOX</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="box box__green box-small">
-                        <h3>HELPDESK</h3>
+        <div class="col-md-4 col-sm-12 hidden-on-large  sm-flex-order-6">
+            <div class="col-sm-12 box">
+                <div class="box__button box__button--tight">
+                    <div class="button button--blue">
+                        <a href="./">TERUG NAAR STARTPAGINA</a>
                     </div>
                 </div>
             </div>
@@ -154,38 +279,55 @@
     </div>
 </div>
 <footer>
-    <div class="footer-section col-md-3 col-sm-12">
-        <div class="button button--green">
-            087/15 87 95
+    <div class="row footer">
+        <div class="footer-section col-md-3 col-sm-12 sm-flex-order-1 flex-order-2">
+            <div class="hidden-on-large">
+                <div class="button button--green">
+                    087/15 87 95
+                </div>
+                <div class="button button--green">
+                    info@pensionfundsnonprofit.org
+                </div>
+                <p><a href="#">meer info</a></p>
+            </div>
+            <div class="hidden-on-small">
+                <div class="button button--green icon--left">
+                        <span class="button__icon">
+                            <i class="info-icon"></i>
+                        </span>
+                    <span class="align-left">
+                            INFO<br>
+                            087/15 87 95
+                        </span>
+                </div>
+            </div>
         </div>
-        <div class="button button--green">
-            info@pensionfundsnonprofit.org
+
+        <div class="footer-section col-md-3 col-sm-12 sm-flex-order-2 flex-order-1">
+            <h1>Pensioensinstelling</h1>
+            <p>Pensioenfonds van de federale Non-Profit/Social-Profit</p>
+            <p>Sainctelettesquare 13-15, 1000 Brussel</p>
+            <br />
+            <div class="text-gray">
+                <p>Organisme voor de financiering van pensioenen</p>
+                <p>Instelling voor bedrijfspensioenvoorziening</p>
+                <p>toegelaten op 15-05-2012 onder het nummer 50.604</p>
+            </div>
         </div>
-        <p><a href="#">meer info</a></p>
-    </div>
 
-    <div class="footer-section col-md-3 col-sm-12">
-        <h1>Pensioensinstelling</h1>
-        <p>Pensioenfonds van de federale Non-Profit/Social-Profit</p>
-        <p>Sainctelettesquare 13-15, 1000 Brussel</p>
-        <br />
-        <div class="text-gray">
-            <p>Organisme voor de financiering van pensioenen</p>
-            <p>Instelling voor bedrijfspensioenvoorziening</p>
-            <p>toegelaten op 15-05-2012 onder het nummer 50.604</p>
+        <div class="footer-section col-md-3 col-sm-12 sm-flex-order-3">
+            <h1>Inrichter</h1>
+            <p>Federale sociale sector (organisaties ressorterend onder het paritair comite voor de
+                gezondheidsinrichtingen- en diensten (PC 330) waarop de CAO van de 13 decembebr 2010 tot invoering van
+                een sectoraal aanvullend pesioenstelsel van toepassing is)</p>
         </div>
-    </div>
 
-    <div class="footer-section col-md-3 col-sm-12">
-        <h1>Inrichter</h1>
-        <p>Federale sociale sector (organisaties ressorterend onder het paritair comite voor de gezondheidsinrichtingen-
-            en diensten (PC 330) waarop de CAO van de 13 decembebr 2010 tot invoering van een sectoraal aanvullend
-            pesioenstelsel van toepassing is)</p>
-    </div>
+        <div class="footer-section col-md-3 col-sm-12 sm-flex-order-4 hidden-on-large">
+            <h1>Wettelijke vermeldingen</h1>
+            <a href='#'>Responsible Disclosure</a>
+        </div>
 
-    <div class="footer-section col-md-3 col-sm-12">
-        <h1>Wettelijke vermeldingen</h1>
-        <a href='#'>Responsible Disclosure</a>
+
     </div>
 </footer>
 </body>

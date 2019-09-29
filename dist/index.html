@@ -11,13 +11,13 @@
     <header class="header-blue">
         <div class="container">
             <div class="row header__container">
-                <div class="col-sm-2">
+                <div class="col-sm-2 hidden-on-large">
                     <div class="icon__container">
                         <img class="icon__image" src="assets/images/chat_icon.svg" alt="chat icon" />
                         <span class="icon__text">CHAT</span>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 hidden-on-large">
                     <div class="icon__container">
                         <img class="icon__image" src="assets/images/inbox_icon.svg" alt="ebox icon" />
                         <span class="icon__text">EBOX</span>
@@ -28,8 +28,8 @@
                         <img class="logo__image line-left" src="assets/images/logo.svg" alt="logo pensioenfonds" />
                     </div>
                 </div>
-                <div class="col-sm-2">
-                    <div class="icon__container">
+                <div class="col-sm-2 hidden-on-large">
+                    <div class="icon__container top-right__container">
                         <div class="icon__container--logout">
                             <img class="icon__image icon__image--logout" src="assets/images/log_out_icon.svg"
                                 alt="logout icon" />
@@ -45,15 +45,26 @@
             </div>
         </div>
 
-        <div class="welcome">
-            <h2 class="welcome-text">Welkom, Jos Weyns</h1>
+        <div class="welcome hidden-on-large">
+            <h2 class="welcome-text">Welkom, Jos Weyns</h2>
         </div>
     </header>
 
     <div class="container">
+        <div class="row">
+            <div class="welcome-desktop hidden-on-small">
+                <h2 class="welcome-text">Welkom, Jos Weyns</h2>
+                <div class="language-container">
+                    <span class="language selected">NL</span>
+                    <span class="language">EN</span>
+                    <span class="language">FR</span>
+                    <span class="language">FR</span>
+                </div>
+            </div>
+        </div>
         <div class="row main-row">
             <!-- Acties Card -->
-            <div class="col-md-4 col-sm-12 main-col">
+            <div class="col-md-4 col-sm-12 main-col sm-flex-order-1 flex-order-7">
                 <div class="box box__blue">
                     <div class="lined-title">
                         <div class="lined-title__line"></div>
@@ -91,8 +102,25 @@
                     </div>
                 </div>
             </div>
+            <!-- PensioenDossier Card -->
+            <div class="col-md-4 col-sm-12 main-col hidden-on-large sm-flex-order-2">
+                <div class="box box__white">
+                    <div class="lined-title">
+                        <div class="lined-title__line"></div>
+                        <h1 class="lined-title__text">PENSIOENDOSSIER</h1>
+                        <div class="lined-title__line"></div>
+                    </div>
+                    <p class="sub-title align-center text-light-blue text-bold text-italic">
+                        Voorstel reeds verzonden
+                    </p>
+                    <p class="align-center">
+                        De berekening werd reeds gemaakt en naar u verstuurd. U kan nu uw dossier verder aanvullen, zodat we over kunnen gaan tot uitbetaling.
+                    </p>
+                </div>
+            </div>
+
             <!-- Persoonsgegevens Card -->
-            <div class="col-md-4 col-sm-12 main-col">
+            <div class="col-md-4 col-sm-12 main-col sm-flex-order-3 flex-order-1">
                 <div class="box box__white">
                     <div class="lined-title">
                         <div class="lined-title__line"></div>
@@ -140,22 +168,24 @@
                 </div>
             </div>
             <!-- Pensioen Card -->
-            <div class="col-md-4 col-sm-12 main-col">
+            <div class="col-md-4 col-sm-12 main-col sm-flex-order-4 flex-order-2">
                 <div class="box box__white">
                     <div class="lined-title">
                         <div class="lined-title__line"></div>
                         <h1 class="lined-title__text">PENSIOEN</h1>
                         <div class="lined-title__line"></div>
                     </div>
-                    <div class="align-center">
-                        <p class="text-light-blue text-bold">PENSIOENRESERVES OPGEBOUWD OP 01/01/2014</p>
-                        <div class="text-bold">€122.48</div>
-                    </div>
-                    <hr>
-                    <div class="align-center">
-                        <p class="text-light-blue text-bold">ALS JE VANDAAG OVERLIJDT, HEBBEN JE BEGUNSTIGDEN RECHT OP
+                    <p class="sub-title align-center text-dark-blue hidden-on-large">
+                        Polisnummer: <span class="text-bold"> 140.12.0016396 </span><br />
+                        Statuut: <span class="text-bold"> inactieve aangeslotene</span>
+                    </p>
+                    <div class="align-center flex-space">
+                        <p class="text-light-blue text-bold mobile-upper">Pensioensreserves opgebouwd op 01/01/2014</p>
+                        <div class="text-bold text-large">€122.48</div>
+                        <hr class="half-width hidden-on-large" />
+                        <p class="text-light-blue text-bold mobile-upper">Als u vandaag overlijdt, hebben uw begunstigden recht op
                         </p>
-                        <div class="text-bold">€122.48</div>
+                        <div class="text-bold text-large">€122.48</div>
                     </div>
 
                     <div class="box__button">
@@ -166,21 +196,54 @@
                 </div>
             </div>
 
+            <!-- Documenten Card -->
+            <div class="col-md-4 col-sm-12 main-col hidden-on-large sm-flex-order-5">
+                <div class="box box__white">
+                    <div class="lined-title">
+                        <div class="lined-title__line"></div>
+                        <h1 class="lined-title__text">DOCUMENTEN</h1>
+                        <div class="lined-title__line"></div>
+                    </div>
+                    <p class="align-center">
+                        <i class="info-icon"></i>
+                    </p>
+                    <p class="align-center text-italic">
+                        Hieronder vindt u uw meest recente documenten. Voor een volledige documentlijst, druk op "Meer info".
+                    </p>
+                    <div class="doc-container">
+                        <div class="col align-center">
+                            <div class="doc-image">image</div>
+                            <span class="text-dark-blue text-bold">Pensioenfiche 2019</span>
+                        </div>
+                        <div class="col align-center">
+                            <div class="doc-image">image</div>
+                            <span class="text-dark-blue text-bold">Pensioenfiche_2019.pdf (299kb)</span>
+                        </div>
+                    </div>
+                    <div class="box__button">
+                        <div class="button button--blue">
+                            MEER INFO
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Digitale Fiche Card -->
-            <div class="col-md-4 col-sm-12 main-col">
+            <div class="col-md-4 col-sm-12 main-col sm-flex-order-6 flex-order-7">
                 <div class="box box__blue">
                     <div class="lined-title">
                         <div class="lined-title__line"></div>
                         <h1 class="lined-title__text">DIGITALE PENSIOENFICHE</h1>
                         <div class="lined-title__line"></div>
                     </div>
-                    <div>
-                        <img class="image-height" src="assets/images/nona.jpg" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna
-                            aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. Tellus cras adipiscing enim
-                            eu turpis. Rhoncus aenean
-                            vel elit scelerisque mauris</p>
+                    <div class="image-text__container">
+                        <span class="box-icon">
+                            <span class="placeholder-icon"></span>
+                        </span>
+                        <p>Wenst u uw pensioenfiches niet langer per post te ontvangen? <br/>
+                        <br />
+                            Vul het formulier in en vervolledig  uw contactgegevens.
+                        </p>
                     </div>
                     <div class="box__button">
                         <div class="button button--white">
@@ -189,31 +252,36 @@
                     </div>
                 </div>
             </div>
-            <!-- Verwacht Pensioen Card -->
-            <div class="col-md-4 col-sm-12 main-col">
+
+            <!-- Simulatie Card -->
+            <div class="col-md-4 col-sm-12 main-col sm-flex-order-7 flex-order-5">
                 <div class="box box__blue">
                     <div class="lined-title">
                         <div class="lined-title__line"></div>
                         <h1 class="lined-title__text">PENSIOENSIMULATIE</h1>
                         <div class="lined-title__line"></div>
                     </div>
-                    <div>
-                        <img class="image-height" src="assets/images/nona.jpg" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna
-                            aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. Tellus cras adipiscing enim
-                            eu turpis. Rhoncus aenean
-                            vel elit scelerisque mauris</p>
+                    <div class="image-text__container">
+                        <span class="box-icon">
+                            <span class="placeholder-icon"></span>
+                        </span>
+                        <p>
+                            Bereken hier uw verwacht pensioen op 67 jaar.
+                        <br/>
+                        <br />
+                            Lorem ipsum dolor sit amet, consecetur abisiciding elit.
+                        </p>
                     </div>
                     <div class="box__button">
                         <div class="button button--white">
-                            SIMULATIE VAN UW PENSIOEN OP 65 JAAR
+                            UW PENSIOENSIMULATIE MAKEN
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Buttons Row -->
-            <div class="col-md-4 col-sm-12 main-col">
+
+<!--             Buttons Row-->
+            <div class="col-md-4 col-sm-12 main-col hidden-on-small flex-order-8">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="box-small box box__blue">
@@ -235,38 +303,55 @@
         </div>
     </div>
     <footer>
-        <div class="footer-section col-md-3 col-sm-12">
-            <div class="button button--green">
-                087/15 87 95
+        <div class="row footer">
+            <div class="footer-section col-md-3 col-sm-12 sm-flex-order-1 flex-order-2">
+                <div class="hidden-on-large">
+                    <div class="button button--green">
+                        087/15 87 95
+                    </div>
+                    <div class="button button--green">
+                        info@pensionfundsnonprofit.org
+                    </div>
+                    <p><a href="#">meer info</a></p>
+                </div>
+                <div class="hidden-on-small">
+                    <div class="button button--green icon--left">
+                        <span class="button__icon">
+                            <i class="info-icon"></i>
+                        </span>
+                        <span class="align-left">
+                            INFO<br>
+                            087/15 87 95
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="button button--green">
-                info@pensionfundsnonprofit.org
+
+            <div class="footer-section col-md-3 col-sm-12 sm-flex-order-2 flex-order-1">
+                <h1>Pensioensinstelling</h1>
+                <p>Pensioenfonds van de federale Non-Profit/Social-Profit</p>
+                <p>Sainctelettesquare 13-15, 1000 Brussel</p>
+                <br />
+                <div class="text-gray">
+                    <p>Organisme voor de financiering van pensioenen</p>
+                    <p>Instelling voor bedrijfspensioenvoorziening</p>
+                    <p>toegelaten op 15-05-2012 onder het nummer 50.604</p>
+                </div>
             </div>
-            <p><a href="#">meer info</a></p>
-        </div>
 
-        <div class="footer-section col-md-3 col-sm-12">
-            <h1>Pensioensinstelling</h1>
-            <p>Pensioenfonds van de federale Non-Profit/Social-Profit</p>
-            <p>Sainctelettesquare 13-15, 1000 Brussel</p>
-            <br />
-            <div class="text-gray">
-                <p>Organisme voor de financiering van pensioenen</p>
-                <p>Instelling voor bedrijfspensioenvoorziening</p>
-                <p>toegelaten op 15-05-2012 onder het nummer 50.604</p>
+            <div class="footer-section col-md-3 col-sm-12 sm-flex-order-3">
+                <h1>Inrichter</h1>
+                <p>Federale sociale sector (organisaties ressorterend onder het paritair comite voor de
+                    gezondheidsinrichtingen- en diensten (PC 330) waarop de CAO van de 13 decembebr 2010 tot invoering van
+                    een sectoraal aanvullend pesioenstelsel van toepassing is)</p>
             </div>
-        </div>
 
-        <div class="footer-section col-md-3 col-sm-12">
-            <h1>Inrichter</h1>
-            <p>Federale sociale sector (organisaties ressorterend onder het paritair comite voor de
-                gezondheidsinrichtingen- en diensten (PC 330) waarop de CAO van de 13 decembebr 2010 tot invoering van
-                een sectoraal aanvullend pesioenstelsel van toepassing is)</p>
-        </div>
+            <div class="footer-section col-md-3 col-sm-12 sm-flex-order-4 hidden-on-large">
+                <h1>Wettelijke vermeldingen</h1>
+                <a href='#'>Responsible Disclosure</a>
+            </div>
 
-        <div class="footer-section col-md-3 col-sm-12">
-            <h1>Wettelijke vermeldingen</h1>
-            <a href='#'>Responsible Disclosure</a>
+
         </div>
     </footer>
 </body>
