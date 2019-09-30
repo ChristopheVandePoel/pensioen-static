@@ -14,7 +14,7 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
-html,body,body div,span,h1,h2,h3,h4,h5,h6,p,img,small,sub,i,ul,li,footer,header,section {
+html,body,body div,span,h1,h2,h3,h4,h5,h6,p,img,small,sub,i,ol,ul,li,table,tbody,thead,tr,th,td,footer,header,section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -81,6 +81,21 @@ a {
 
 /* tables still need cellspacing="0" in the markup */
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -98,8 +113,17 @@ select {
   font: 99% sans-serif;
 }
 
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
 small {
   font-size: 85%;
+}
+
+td,td img {
+  vertical-align: top;
 }
 
 /* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
@@ -161,6 +185,14 @@ button {
   flex-basis: 0;
   max-width: 100%;
   padding: 15px;
+}
+
+.first {
+  order: -1;
+}
+
+.last {
+  order: 1;
 }
 
 .align-center {
@@ -271,6 +303,14 @@ button {
   .row.bottom-sm {
     align-items: flex-end;
   }
+
+  .first-sm {
+    order: -1;
+  }
+
+  .last-sm {
+    order: 1;
+  }
 }
 
 @media only screen and (min-width: 1001px) {
@@ -376,6 +416,14 @@ button {
 
   .row.bottom-md {
     align-items: flex-end;
+  }
+
+  .first-md {
+    order: -1;
+  }
+
+  .last-md {
+    order: 1;
   }
 }
 
@@ -530,6 +578,10 @@ hr.half-width {
   font-weight: 300;
 }
 
+.text-extra-light {
+  font-weight: 100;
+}
+
 .text-large {
   font-size: 22px;
 }
@@ -615,6 +667,10 @@ select.select--white {
   background: white;
 }
 
+select.select-half-size {
+  width: 50%;
+}
+
 .header__container {
   height: 70px;
   padding-left: 5px;
@@ -679,25 +735,36 @@ select.select--white {
   background: #1A6EB7;
   color: white;
   padding: 8px;
+  padding-left: 16px;
   margin: 0 8px;
   width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .welcome-desktop .welcome-text {
-  margin-left: 16px;
+  margin-top: 10px;
 }
 
 .welcome-desktop .language-container {
   position: absolute;
   right: 8px;
   bottom: 8px;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
 }
 
 .welcome-desktop .language {
   text-align: center;
-  width: 30px;
-  display: inline-block;
+  width: 32px;
+  height: 32px;
+  display: flex;
   padding: 2px;
+  justify-content: center;
+  flex-direction: column;
   border: 2px solid #00adef;
   color: #00adef;
   font-size: 16px;
@@ -763,6 +830,86 @@ select.select--white {
   flex-direction: column;
 }
 
+.box__table {
+  margin-top: 16px;
+}
+
+.box__table table {
+  width: 100%;
+}
+
+.box__table tr:nth-child(even) {
+  background: #ebebeb;
+}
+
+.box__table th {
+  border: 1px solid #b3b3b3;
+  border-top: none;
+  padding: 5px;
+}
+
+.box__table th:last-child {
+  border-right: none;
+}
+
+.box__table th:first-child {
+  border-left: none;
+}
+
+.box__table td:first-child {
+  border-left-width: 0;
+}
+
+.box__table td {
+  color: #00adef;
+  text-align: right;
+  padding: 5px;
+  border: 0 solid #b3b3b3;
+  border-left-width: 1px;
+}
+
+.box__table td.table-center {
+  text-align: center;
+}
+
+.box__table td.table-left {
+  text-align: left;
+}
+
+.box__list {
+  margin-top: 8px;
+}
+
+.box__list-ol {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.box__list li:first-child {
+  font-weight: bold;
+}
+
+.box__list--begunstigden {
+  margin-bottom: 16px;
+}
+
+.box__list--begunstigden li:first-child {
+  font-weight: normal;
+}
+
+.box__list--begunstigden a {
+  color: #003366;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.box__list li:before {
+  font-size: 12px;
+  color: #00adef;
+  content: "▸";
+  margin-right: 4px;
+}
+
 .box > p {
   line-height: 1.5;
 }
@@ -820,9 +967,25 @@ select.select--white {
   margin-top: 16px;
 }
 
+.box__button--tight {
+  margin-top: 0;
+}
+
 .box-small {
   padding: 5px;
   text-align: center;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  min-height: 75px;
+}
+
+.box-small__first {
+  margin-left: 0;
+}
+
+.box-small__last {
+  margin-right: 0;
 }
 
 .doc-container {
@@ -910,6 +1073,10 @@ span.placeholder-icon {
 
 .button-container .button {
   margin: 8px;
+}
+
+.button--more-text {
+  font-size: 14px;
 }
 
 .button--white {
